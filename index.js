@@ -1,6 +1,6 @@
 const fs = require('fs');
 const http = require('http');
-var colors = require('colors');
+require('colors');
 
 const server = http.createServer(function (req, res){
     fs.readFile('index.html', function(err, data) {
